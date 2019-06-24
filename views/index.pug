@@ -1,0 +1,94 @@
+extends layout
+
+block content
+	.container-fluid
+		.row.jumbotron
+			.col-xs-12.col-sm-12.col-md-9.col-lg-9.col-xl-10
+				p.lead
+					| Success Soft is a boutique digital transformation consultancy headquartered. We have been helping global companies and established brands reimagine their business by building impactful digital engineering solutions powered by the latest technologies. 
+			.col-xs-12.col-sm-12.col-md-3.col-lg-3.col-xl-2
+				a(href='/contact')
+					button.btn.btn-outline-secondary.btn-lg(type='button') Contact Us
+
+	.container-fluid.padding
+		.row.welcome.text-center
+			.col-12
+				h1.display-4 Built the Technology Together 
+			hr.hrline
+
+	.container-fluid.padding
+		.row.text-center.padding
+			.col-xs-12.col-sm-6.col-md-4
+				img(src='images/ai.png' alt='artifical intelligence' height='100' width='100')
+				br
+				br
+				br
+				h3 Artifical Intelligence
+				p
+			.col-xs-12.col-sm-6.col-md-4
+				img(src='images/iot.png' alt='internet of things' height='100' width='100')
+				br
+				br
+				br
+				h3 IoT
+				p
+			.col-xs-12.col-md-4
+				img(src='images/mL.png' alt='machine learning' height='100' width='100')
+				br
+				br
+				br
+				h3 Machine Learning
+				p
+			hr.my-4
+
+	.container-fluid.clients-section
+		.container
+			.row
+				.col-sm-6.col-sm-offset-1.col-xs-12.animBlock.client-intro.viewed(data-position='left' data-offset='20')
+					h3 
+						| CLIENTS.
+					p
+						| We've been lucky enough to work with our partners.
+
+				.col-sm-6.col-sm-offset-1.col-xs-12.animBlock.client-intro.viewed(data-position='left' data-offset='50')
+					img.img-responsive(src='/images/clients.jpeg' alt='Success Soft Clients')
+
+	br
+    	
+	#slides.carousel.slide(data-ride='carousel')
+		ol.carousel-indicators
+			li.active(data-target='#slides'	data-slide-to='0')
+			li(data-target='#slides' data-slide-to='1')
+			li(data-target='#slides' data-slide-to='2')
+			li(data-target='#slides' data-slide-to='3')
+			li(data-target='#slides' data-slide-to='4')
+		.carousel-inner
+			.carousel-item.active
+				img(src='/images/p1.jpg' alt='First Picture')
+			.carousel-item
+				img(src='images/p2.jpg' alt='Second Picture')
+			.carousel-item
+				img(src='images/p3.jpg' alt='Third Picture')
+			.carousel-item
+				img(src='images/p4.jpg' alt='Four Picture')
+			.carousel-item
+				img(src='images/p5.jpg' alt='Five Picture')
+		a.carousel-control-prev(href='#slides' data-slide='prev')
+			span.carousel-control-prev-icon
+				img(src='images/left-chevron.png' alt='Slide Prev' height='40px')
+		a.carousel-control-next(href='#slides' data-slide='next')
+			span.carousel-control-next-icon
+				img(src='images/right-chevron.png' alt='Slide Next' height='40px')
+
+block scripts
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+	link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+	link(rel='stylesheet', href='stylesheets/style.css')
+	link(rel='stylesheet', href='/css/bootstrap.min.css')
+	link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+	script(src='https://ajax.googleapis.com/ajax.libs/jquery/1/jquery.min.js')
+	script(src='lib/bootstrap/js/bootstrap.min.js')
+	script(src='bootstrap/js/bootstrap.min.js')

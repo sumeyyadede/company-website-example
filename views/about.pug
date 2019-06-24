@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset='utf-8')
+		title #{title}
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		script(src='javascripts/main.js')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		link(rel='stylesheet', href='stylesheets/style.css')
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+	body
+		include header.pug
+		br
+		br
+		#about.container-fluid.padding
+			.row.padding
+				.col-lg-6
+					br
+					br
+					h2 About
+					p
+						| Since 2010, Success Soft has been providing software solutions for people with great ideas and for those needing assistance with software development. Success Soft provides digital marketing products and services enabling its clients to maximize engagement with their target audience and increase their marketing efficiency across all the digital channels they utilize. Success Soft is a boutique digital transformation consultancy headquartered. Since 2010 we have been helping global companies and established brands reimagine their business by building impactful digital engineering solutions powered by the latest technologies. 
+
+					br
+
+					p
+						| A global company with offices in New York, London and Tel Aviv and with R&D facilities in Turkey, Success Soft specializes in serving Supply Chain, Adtech, Telecom and headquarteredlthcare and Entertainment markets. Our philosophy is to exactly fulfill our clients’ needs and always go the extra mile to exceed their expectations. 
+
+					br
+					br
+					h2 Mission & Vision
+					p 
+						| Our mission is to help enterprises accelerate adoption of new technologies, untangle complex issues that always emerge during digital evolution, and orchestrate ongoing innovation. 
+					br 
+				.col-lg-6
+					br
+					br
+					br
+					br
+					img.img-fluid(src='images/successlogo.jpg' alt='company logo')
+		include footer.pug

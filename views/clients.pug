@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset='utf-8')
+		title #{title}
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		script(src='javascripts/main.js')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		link(rel='stylesheet', href='stylesheets/style.css')
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+		link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+		script(src='lib/bootstrap/js/bootstrap.min.js')
+		script(src='bootstrap/js/bootstrap.min.js')
+
+	body
+		include header.pug
+		br
+
+		.container-fluid
+			.row.welcome.text-center
+				.col-12
+					h1.display-4 Clients
+			hr
+
+		#client.row
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/SNSlogo.png' heigth='250px' width='250px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+					a.thumbnail(href='#')
+						img.img-responsive(src='images/adoramalogo.png' heigth='250px' width='250px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+					a.thumbnail(href='#')
+						img.img-responsive(src='images/memoriallogo.png' heigth='250px' width='250px')
+		br
+
+		#client.row
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/pegasuslogo.png' heigth='250px' width='250px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/nissanlogo.png' heigth='150px' width='150px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/kohlerLogo.png' heigth='250px' width='250px')
+		br
+
+		#client.row
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/stihllogo.png' heigth='200px' width='200px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/alcoalogo.png' heigth='200px' width='200px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/sasLogo.png' heigth='200px' width='200px')
+
+
+		.container-fluid
+			.row.welcome.text-center
+				.col-12
+					h1.display-4 Partners
+			hr
+			
+		#partner.row
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/microsoftlogo.jpg' heigth='250px' width='250px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/turkcellLogo.jpg' heigth='250px' width='250px')
+
+			.col-lg-4.col-md-4.col-xs-4.thumb
+				a.thumbnail(href='#')
+					img.img-responsive(src='images/vodafonelogo.jpg' heigth='250px' width='250px')
+
+		br
+		br
+		br
+
+		include footer.pug
